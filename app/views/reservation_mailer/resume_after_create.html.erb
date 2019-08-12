@@ -1,0 +1,9 @@
+This email is to confirm your booking to <%= @reservation.guest.name %> on <%= @reservation.start_at %>. 
+<br>
+Your booking details are below: 
+<br>
+Start at: <%= @reservation.start_at %><br>
+End at: <%= @reservation.end_at %><br>
+Guest: <%= @reservation.num_guests %><br>
+Table: <b><%= @reservation.table.name %></b><br>
+<br>

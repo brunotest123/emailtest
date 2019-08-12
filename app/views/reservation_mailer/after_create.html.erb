@@ -1,0 +1,16 @@
+Dear <%= @reservation.guest.name %>
+<br>
+<br>
+This email is to confirm your booking at <%= @reservation.shift.restaurant.name %> on <%= @reservation.start_at %>. 
+<br>
+Your booking details are below: 
+<br>
+Start at: <%= @reservation.start_at %><br>
+End at: <%= @reservation.end_at %><br>
+Guest: <%= @reservation.num_guests %><br>
+<br>
+Thank you for booking.<br>
+<br>
+Kind Regards,<br>
+<br>
+<b><%= @reservation.shift.restaurant.name %></b>
